@@ -1,0 +1,12 @@
+(define (mcd a b)
+  (cond ((= b 0) a)
+        (else (mcd b (mod a b)))))
+
+(define (main)
+  (display "Introdueix el primer nombre: ")
+  (let ((a (read)))
+    (display "Introdueix el segon nombre: ")
+    (let ((b (read)))
+      (display "El màxim comú divisor és: ")
+      (display (mcd a b))
+      (newline))))

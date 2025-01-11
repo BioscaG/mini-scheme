@@ -1,0 +1,7 @@
+(define (main)
+  (let ((a 10)
+        (b 3))
+    (display (+ (* a b) (/ a b)))
+    (newline)
+    (display (> (* a b) (/ a b)))
+    (newline)))
